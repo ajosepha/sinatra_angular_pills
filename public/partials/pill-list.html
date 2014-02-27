@@ -1,20 +1,30 @@
 <div class="jumbotron">
+  <div class = "container">
   <h2> A list of pills and what's in them! </h2>
     <p>When I was traveling, I found it really hard to figure out what was in my pill and find equivalent pills.  So hopefully this app will help with that!</p>
+  </div>
+  <div class = "search-box">
+    <h3>Enter your pill or hormone</h3>
+    <div class = "searching">
+      <input id="search" type="text" ng-model ="query"/><br/>
+    </div>
+      <h3> Search by: </h3>
+        <div class = "searching">
+        <select ng-model="orderProp">
+          <option value="name">Pill Name</option>
+          <option value="hormones">Hormones</option>
+        </select>
+      </div>
+  </div>
+
 </div>
-<div class="container-fluid">
-  <!-- Pill: <input ng-model="query"> -->
-  <input id="search" type="text" ng-model ="query"/>
-    <select ng-model="orderProp">
-      <option value="name">Pill Name</option>
-      <option value="hormones">Hormones</option>
-    </select>
 
 
+  <div class="container-fluid">
   <ul class = "pills">
     <li ng-repeat="pill in pills |filter:query |orderBy:orderProp" class="pill">
-        {{pill.name}}
-      <p>{{pill.hormone}}</p>
+      <p>Name: {{pill.name}}</p>
+      <p>Hormones: {{pill.hormone}}</p>
     </li>
   </ul>
 </div>
