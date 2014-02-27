@@ -1,35 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" ng-app="pillcatApp">
 <head>
   <meta charset="utf-8">
   <title>What's in your birth control? </title>
   <link rel="stylesheet" href="css/app.css">
-  <link rel= "stylehsheet" href = "css/bootstrap.min.css">
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
   <script src="js/app.js"></script>
+   <script src="js/controllers.js"></script>
   <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
+ 
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
-  <script src="angular-route.js"></script>
 
 </head>
-<body ng-controller ="PillListCtrl">
-  <div class="container-fluid">
-    <div class="span2">
-
-      Pill: <input ng-model="query">
-    </div>
-    <div class="span10">
-      <ul>
-        <li ng-repeat="pill in pills |filter:query">
-            {{pill.name}}
-          <p>{{pill.hormone}}</p>
-        </li>
-      </ul>
-    </div>
-  </div>
+<body>
+  <div ng-view></div>
   
   
   <!-- In production use:

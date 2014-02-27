@@ -9,10 +9,13 @@ pillcatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/pills', {
-        templateUrl: 'partials/pill-list.html'
+        templateUrl: 'partials/pill-list.html',
         controller: 'PillListCtrl'
-      })
-  }])
+      }).
+      otherwise({
+        redirectTo: '/pills'
+      });
+  }]);
 
 // Declare app level module which depends on filters, and services
 

@@ -2,7 +2,7 @@ require 'bundler'
 Bundler.require
 
 require 'sinatra/activerecord'
-require './lib/pill'
+#require './lib/pill'
 
 Dir.glob('./lib/*.rb') do |model|
   require model
@@ -18,13 +18,12 @@ class PillcatApp < Sinatra::Application
   set :database, "sqlite3:///database.db"
 
   get '/' do
-    #{}"hi"
-    File.read(File.join('public/app', 'index.html'))
+    File.read('public/index.html')
   end
 
   get '/pills' do
-    @pill = Pill.all
-    @pill.to_json
+    @pills = Pill.all
+    @pills.to_json
   end
 
 end

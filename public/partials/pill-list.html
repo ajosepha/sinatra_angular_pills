@@ -1,1 +1,15 @@
+<p> test</p>
+  <div class="container-fluid">
+    <div class="span2">
 
+      Pill: <input ng-model="query">
+    </div>
+    <div class="span10">
+      <ul>
+        <li ng-repeat="pill in pills |filter:query">
+            {{pill.name}}
+          <p>{{pill.hormone}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
