@@ -34,6 +34,9 @@
   color :#EDF6F5;
 }
 
+.span-9 {
+  color :red;
+}
 .search-box {
   background-color: #BD5570;
   color :#EDF6F5;
@@ -52,9 +55,18 @@ body {
   background-color :#E1BAD9;
 }
 
-.container-fluid {
 
-  /*  background-image:url('../img/georgia1.jpg');
-  background-repeat :no-repeat;*/
-
+.pills {
+  font-size :1.15em;
 }
+
+.col6 {
+  width: 15%;
+  display: inline-block; 
+  border: solid black 2px;
+  padding: 1.25em;}
+
+  .hormone {
+    background-color :#551A8B;
+    color :white;
+  }

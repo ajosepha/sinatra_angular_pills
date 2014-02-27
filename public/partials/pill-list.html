@@ -19,13 +19,13 @@
 
 </div>
 
-
-  <div class="container-fluid">
-  <ul class = "pills">
-    <li ng-repeat="pill in pills |filter:query |orderBy:orderProp" class="pill">
-      <p>Name: {{pill.name}}</p>
-      <p>Hormones: {{pill.hormone}}</p>
-    </li>
-  </ul>
+<div class="container-fluid">
+    <div ng-repeat="pill in pills |filter:query |orderBy:orderProp" class="col6">
+      <div class = "cards" ng-click="myFunc()"
+        
+        <div class="name">{{pill.name}}</div>
+        <div class="hormone">Hormones: {{pill.hormone}}</div>
 </div>
+
+
   

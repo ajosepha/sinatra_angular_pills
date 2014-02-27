@@ -22,9 +22,12 @@ pillcatApp.controller('PillListCtrl', ['$scope', '$http',
 
 pillcatApp.controller('PillDetailCtrl', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
-    $http.get("pills/pills-" + $routeParams.catId + '.json').success(function(data) {
+    $http.get("pills/pills-" + '.json').success(function(data) {
       $scope.pill = data[0];
-    });
-
-   
+    }); 
   }]);
+
+// $scope.myFunc = function(){
+//   alert("hi")
+//   document.getElementByClass('hormone').hidden()
+// }
