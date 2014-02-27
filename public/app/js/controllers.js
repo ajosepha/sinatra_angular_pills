@@ -10,6 +10,7 @@ pillcatApp.controller('PillListCtrl', ['$scope', '$http',
         $scope.pills = data;
       });
     // $scope.pills = Pillcat.query();
+    
     }]);
 
   // function($scope, $http) {
