@@ -61,10 +61,14 @@ body {
 }
 
 .col6 {
-  width: 15%;
+  width: 15%;;
   display: inline-block; 
-  border: solid black 2px;
-  padding: 1.25em;}
+  background-color: #68228B;
+  color :white;
+  margin: 30px;
+  padding :1em;}
+
+
 
   .hormone {
     background-color :#551A8B;
