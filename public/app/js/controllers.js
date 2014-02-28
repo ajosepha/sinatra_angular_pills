@@ -6,7 +6,7 @@ var pillcatControllers = angular.module('pillcatControllers', []);
 
 pillcatApp.controller('PillListCtrl', ['$scope', '$http', 
     function($scope, $http){
-      $http.get('http://localhost:9393/pills').success(function(data){
+      $http.get('/pills').success(function(data){
         $scope.pills = data;
       });
     // $scope.pills = Pillcat.query();
