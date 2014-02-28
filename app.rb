@@ -21,7 +21,7 @@ ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://local
   # set :database, "sqlite3:///database.db"
 
   get '/' do
-    File.read('public/index.html')
+    File.read('public/app/index.html')
   end
 
   get '/pills' do
