@@ -4,6 +4,9 @@ Bundler.require
 require 'sinatra/activerecord'
 #require './lib/pill'
 
+require 'active_record'
+
+
 Dir.glob('./lib/*.rb') do |model|
   require model
 end
