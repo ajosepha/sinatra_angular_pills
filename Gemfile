@@ -6,14 +6,16 @@ gem "sinatra-activerecord"
 gem "rake"
 gem 'nokogiri'
 gem "activerecord"
+gem "tux"
 
 group :production do
   gem 'pg'
+
 end
 
 group :development do
   gem "shotgun"
-  gem "tux"
+ 
   gem "awesome_print"
   gem "sqlite3"
 
