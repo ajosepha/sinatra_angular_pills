@@ -18,7 +18,7 @@ class PillcatApp < Sinatra::Application
     set :public_folder, 'public/app'
   end
 
-  set :database, "sqlite3:///database.db"
+  # set :database, "sqlite3:///database.db"
 
   get '/' do
     File.read('public/index.html')
