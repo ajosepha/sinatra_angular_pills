@@ -9,7 +9,7 @@ pillcatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/pills', {
-        templateUrl: 'partials/pill-list.html',
+        templateUrl: 'partials/blake.html',
         controller: 'PillListCtrl'
       }).
       otherwise({
