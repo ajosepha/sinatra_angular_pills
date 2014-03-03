@@ -60,7 +60,6 @@ body {
 
 .pills {
   font-size :1.15em;
-
 }
 
 .col6 {
@@ -82,8 +81,11 @@ body {
 }
 
 
+.hidden{
+  visibility: none;
+}
 
-  .hormone {
-    background-color :#551A8B;
-    color :white;
-  }
+.hormone {
+  background-color :#551A8B;
+  color :white;
+}

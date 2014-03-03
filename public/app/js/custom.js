@@ -1,13 +1,14 @@
-
-
+'use strict'
 $(document).ready(function(){
   setTimeout(function(){
-    $(".hormone").hide();
-    $(".card").on("click", function(alert){
-      $(this).find(".hormone").fadeIn()
+    $(".col6").on("click", function(alert){
+      $(this).find(".hormone").toggleClass("hidden");
     });
-  }, 1000);
-
-  
-  
+   
+  }, 1600);  
 });
+
+
+
+
+
