@@ -17,8 +17,8 @@ class PillcatApp < Sinatra::Application
     set :root, File.dirname(__FILE__)
     set :public_folder, 'public/app'
   end
-ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
-  # set :database, "sqlite3:///database.db"
+# ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+  set :database, "sqlite3:///database.db"
 
   get '/' do
     File.read('public/app/index.html')

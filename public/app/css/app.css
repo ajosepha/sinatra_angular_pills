@@ -59,19 +59,20 @@ body {
 
 
 .pills {
-  font-size :1.15em;
+  font-size:20px;
 }
 
-.col6 {
-  width: 15%;
+.column6 {
+  /*width: 20%;*/
+  width: 200px;
   display: inline-block; 
   background-color: #68228B;
   color :white;
   margin: 30px;
-  padding :1em;
+  padding :20px;
 }
 
-.col6:hover{
+.column6:hover{
   background-color: #52B3BA;
   cursor: pointer;
 }

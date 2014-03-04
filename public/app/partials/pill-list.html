@@ -9,20 +9,20 @@
     <div class = "searching">
       <input id="search" type="text" ng-model ="query"/><br/>
     </div>
-    <h3> Search by: </h3>
-      <div class = "searching">
+    <h3> Filter by: </h3>
+     <!--  <div class = "searching"> -->
         <select ng-model="orderProp">
           <option value="name">Pill Name</option>
           <option value="hormones">Hormones</option>
         </select>
-      </div>
+     <!--  </div> -->
   </div>
 
 </div>
 
 <div class="container-fluid">
  
-    <div ng-repeat="pill in pills |filter:query |orderBy:orderProp" class="col6">
+    <div ng-repeat="pill in pills |filter:query |orderBy:orderProp" class="column6" un-hide>
       <div class = "card">
         <div class="name">{{pill.name}}</div>
         <div class="hormone hidden">{{pill.hormone}}</div>

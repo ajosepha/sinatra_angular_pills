@@ -17,5 +17,11 @@ pillcatApp.config(['$routeProvider',
       });
   }]);
 
+pillcatApp.directive("unHide", function() {
+  return function(scope, element, attrs){
+                element.on("click", function(){
+                  $(this).find(".hormone").toggleClass("hidden");
+    });
+}});
 // Declare app level module which depends on filters, and services
 
