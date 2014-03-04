@@ -9,7 +9,6 @@ pillcatApp.controller('PillListCtrl', ['$scope', '$http',
       $http.get('/pills').success(function(data){
         $scope.pills = data;
       });
-
     
     }]);
 
