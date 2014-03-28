@@ -29,8 +29,7 @@ attr_reader :html
       hash[:name].strip!
     end
   end
-
-  
+ 
 
 end
 
